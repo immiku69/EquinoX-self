@@ -1,4 +1,4 @@
-name: Build ProjectNERV
+name: Build EquinoX-self
 
 on:
   workflow_dispatch:
@@ -14,14 +14,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [a51, a52sxq, a71, a73xq, m52xq, r9q, r9q2]
+        target: [r9q, r9q2]
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           submodules: 'recursive'
-
+          
       - name: Free disk space (1/3)
         run: |
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
@@ -57,23 +57,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: 'gradle'
-
+          
       - name: Build dependencies
         run: |
           source ./buildenv.sh ${{ matrix.target }}
           ./scripts/build_dependencies.sh
-
-      - name: Download source firmware
-        run: |
-          source ./buildenv.sh ${{ matrix.target }}
-          ./scripts/download_fw.sh --ignore-target
-
-      - name: Extract source firmware
-        run: |
-          source ./buildenv.sh ${{ matrix.target }}
-          ./scripts/extract_fw.sh --ignore-target
-
+          
       - name: Download target firmware
         run: |
           source ./buildenv.sh ${{ matrix.target }}
@@ -93,11 +82,9 @@ jobs:
           else
               ./scripts/make_rom.sh --no-rom-zip
           fi
-
       - name: Upload to GoFile
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/paradigm'
         run: |
           ZIP_FILE=$(find out -maxdepth 1 -type f -name "*.zip" | head -n 1)
-          RESPONSE=$(curl -s -F "file=@$ZIP_FILE" -F "token=${{ secrets.GOFILE_TOKEN }}" -F "folderId=${{ secrets.GOFILE_FOLDER_ID }}" "https://upload-eu-par.gofile.io/uploadFile")
+          RESPONSE=$(curl -s -F "file=@$ZIP_FILE" "https://upload-eu-par.gofile.io/uploadFile")
           echo "Download link:"
           echo "$RESPONSE" | jq -r '.data.downloadPage'
