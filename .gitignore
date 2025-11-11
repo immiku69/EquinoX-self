@@ -1,0 +1,15 @@
+out/
+
+# Cert
+security/platform.x509.pem
+security/platform.pk8
+
+#
+# We don't want to ignore the following even if they are dot-files
+#
+!.gitattributes
+!.gitignore
+!.gitmodules
+
+# Windows Zone Identifier files
+*:*Zone.Identifier

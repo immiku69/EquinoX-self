@@ -1,0 +1,10 @@
+system/priv-app/AICore 0 0 755 capabilities=0x0
+system/priv-app/AICore/AICore.apk 0 0 644 capabilities=0x0
+system/priv-app/AiWallpaper 0 0 755 capabilities=0x0
+system/priv-app/AiWallpaper/AiWallpaper.apk 0 0 644 capabilities=0x0
+system/priv-app/Moments 0 0 755 capabilities=0x0
+system/priv-app/Moments/Moments.apk 0 0 644 capabilities=0x0
+system/priv-app/PhotoEditor_AIFull 0 0 755 capabilities=0x0
+system/priv-app/PhotoEditor_AIFull/PhotoEditor_AIFull.apk 0 0 644 capabilities=0x0
+system/app/SketchBook 0 0 755 capabilities=0x0
+system/app/SketchBook/SketchBook.apk 0 0 644 capabilities=0x0

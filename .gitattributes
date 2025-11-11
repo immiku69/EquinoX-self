@@ -1,0 +1,28 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=lf
+# Denote all files that are truly binary and should not be modified.
+# Common file extensions
+*.apk binary
+*.apex binary
+*.bin binary
+*.so binary
+*.jar binary
+*.pk8 binary
+*.ogg binary
+*.ico binary
+*.jpg binary
+*.png binary
+*.qmg binary
+*.webp binary
+# ROM-specific prebuilt blobs
+prebuilts/bootable/deprecated-ota/updater binary
+prebuilts/kernels/*/* binary
+prebuilts/*/*/*/** binary
+unica/mods/rezetprop/system/bin/rezetprop binary
+# Device-specific prebuilt blobs
+target/*/patches/*/system/** binary
+target/*/patches/*/product/** binary
+target/*/patches/*/vendor/** binary
+prebuilts/samsung/pa3qxxx/system/app/SketchBook/SketchBook.apk filter=lfs diff=lfs merge=lfs -text
+prebuilts/samsung/pa3qxxx/system/priv-app/PhotoEditor_AIFull/PhotoEditor_AIFull.apk filter=lfs diff=lfs merge=lfs -text
+prebuilts/samsung/pa3qxxx/system/priv-app/SamsungSmartSuggestions/SamsungSmartSuggestions.apk filter=lfs diff=lfs merge=lfs -text

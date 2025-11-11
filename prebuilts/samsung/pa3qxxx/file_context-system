@@ -1,0 +1,10 @@
+/system/priv-app/PhotoEditor_AIFull u:object_r:system_file:s0
+/system/priv-app/PhotoEditor_AIFull/PhotoEditor_AIFull\.apk u:object_r:system_file:s0
+/system/priv-app/Moments u:object_r:system_file:s0
+/system/priv-app/Moments/Moments\.apk u:object_r:system_file:s0
+/system/priv-app/AiWallpaper u:object_r:system_file:s0
+/system/priv-app/AiWallpaper/AiWallpaper\.apk u:object_r:system_file:s0
+/system/priv-app/AICore u:object_r:system_file:s0
+/system/priv-app/AICore/AICore\.apk u:object_r:system_file:s0
+/system/app/SketchBook u:object_r:system_file:s0
+/system/app/SketchBook/SketchBook\.apk u:object_r:system_file:s0
