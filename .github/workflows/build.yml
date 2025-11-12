@@ -77,7 +77,7 @@ jobs:
         run: |
           rm -rf out/odin/SM-G990B2_EUX
           mkdir -p out/odin/SM-G990B2_EUX
-          touch out/odin/G990B2_EUX/.downloaded
+          touch out/odin/SM-G990B2_EUX/.downloaded
 
       - name: Build ROM
         run: |
