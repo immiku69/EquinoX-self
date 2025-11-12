@@ -73,12 +73,6 @@ jobs:
           source ./buildenv.sh ${{ matrix.target }}
           ./scripts/extract_fw.sh --ignore-source
       
-      - name: Cleanup out/odin and leave placeholder
-        run: |
-          rm -rf out/odin/SM-G990B2_EUX
-          mkdir -p out/odin/SM-G990B2_EUX
-          touch out/odin/SM-G990B2_EUX/.downloaded
-
       - name: Build ROM
         run: |
           source ./buildenv.sh ${{ matrix.target }}
