@@ -75,7 +75,7 @@ jobs:
       
       - name: Cleanup out/odin and leave placeholder
         run: |
-          rm -rf out/odin/SM-G9990B2_EUX
+          rm -rf out/odin/SM-G990B2_EUX
           mkdir -p out/odin/SM-G990B2_EUX
           touch out/odin/G990B2_EUX/.downloaded
 
