@@ -481,14 +481,6 @@ PRINT_HEADER()
         ONEUI_VERSION="$MAJOR.$MINOR"
     fi
 
-    echo    'ui_print(" ");'
-    echo    'ui_print("************************************************");'
-    echo    'ui_print(" ");'
-    echo    'ui_print("              _  __ ____ ___  _   __");'
-    echo    'ui_print("             / |/ // __// _ \| | / /");'
-    echo    'ui_print("            /    // _/ / , _/| |/ / ");'
-    echo    'ui_print("           /_/|_//___//_/|_| |___/  ");'
-    echo    'ui_print(" ");'
     echo -n 'ui_print("'
     for i in $(seq 1 "$SIDE_PADDING"); do
         echo -n ' '
