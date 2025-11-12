@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-set +e
+set -e
 
 #[
 source "$SRC_DIR/scripts/utils/module_utils.sh" || exit 1
