@@ -56,6 +56,7 @@ system/app/FactoryAirCommandManager
 system/app/FactoryCameraFB
 system/app/FBAppManager_NS
 system/app/HMT
+system/app/BixbyWakeup
 system/app/MoccaMobile
 system/app/PlayAutoInstallConfig
 system/app/SamsungCalendar
@@ -129,5 +130,8 @@ system/priv-app/SmartEpdgTestApp
 system/priv-app/Upday
 system/priv-app/SamsungMessages
 system/priv-app/PhotoEditor_Full
+system/priv-app/Bixby
+system/priv-app/GameTools_Dream
+system/priv-app/SamsungBilling
 system/priv-app/YourPhone_P1_5
 "
