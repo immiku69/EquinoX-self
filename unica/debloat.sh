@@ -129,4 +129,5 @@ system/priv-app/SmartEpdgTestApp
 system/priv-app/Upday
 system/priv-app/SamsungMessages
 system/priv-app/PhotoEditor_Full
+system/priv-app/YourPhone_P1_5
 "
