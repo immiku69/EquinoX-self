@@ -6,5 +6,6 @@ ADD_TO_WORK_DIR "pa3qxxx" "system" "system/priv-app/SamsungSmartSuggestions" 0 0
 ADD_TO_WORK_DIR "pa3qxxx" "system" "system/priv-app/PhotoEditor_AIFull" 0 0 755 "u:object_r:system_file:s0"
 ADD_TO_WORK_DIR "pa3qxxx" "system" "system/app/SketchBook" 0 0 755 "u:object_r:system_file:s0"
 SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_FRAMEWORK_SUPPORT_PERSONALIZED_DATA_CORE" "TRUE"
+SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_FRAMEWORK_SUPPORT_SMART_SUGGESTIONS_WIDGET" "TRUE"
 
 
