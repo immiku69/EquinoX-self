@@ -23,6 +23,7 @@
 # Samsung Defex policy
 SYSTEM_DEBLOAT+="
 dpolicy_system
+system/preload/Facebook_stub_preload
 "
 VENDOR_DEBLOAT+="
 etc/dpolicy
