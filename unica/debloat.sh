@@ -131,7 +131,6 @@ system/priv-app/Upday
 system/priv-app/SamsungMessages
 system/priv-app/PhotoEditor_Full
 system/priv-app/Bixby
-system/priv-app/GameTools_Dream
 system/priv-app/SamsungBilling
 system/priv-app/YourPhone_P1_5
 "
