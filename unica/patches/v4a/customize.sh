@@ -3,8 +3,8 @@
 
 LOG_STEP_IN "- Adding Viper4AndroidFX-RE"
 
-ADD_TO_WORK_DIR "$SRC_DIR/unica/mods/v4a" "vendor" "lib/soundfx/libv4a_re.so" 0 0 644 "u:object_r:vendor_file:s0"
-ADD_TO_WORK_DIR "$SRC_DIR/unica/mods/v4a" "vendor" "lib64/soundfx/libv4a_re.so" 0 0 644 "u:object_r:vendor_file:s0"
+ADD_TO_WORK_DIR "$SRC_DIR/unica/patches/v4a" "vendor" "lib/soundfx/libv4a_re.so" 0 0 644 "u:object_r:vendor_file:s0"
+ADD_TO_WORK_DIR "$SRC_DIR/unica/patches/v4a" "vendor" "lib64/soundfx/libv4a_re.so" 0 0 644 "u:object_r:vendor_file:s0"
 
 CFGS="$(find "$WORK_DIR/system" "$WORK_DIR/vendor" -type f -name "*audio_effects*.conf" -o -name "*audio_effects*.xml")"
 
